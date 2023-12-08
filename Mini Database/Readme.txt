@@ -1,0 +1,1 @@
+To run the program, copy the ConsoleDatabase code, paste it into your compiler, and execute. There is a sample output provided for reference.
