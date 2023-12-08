@@ -1,0 +1,114 @@
+Database Console . . .
+Command ((create database/table)/insert/select/exit)
+Rules :
+* Don't use ';' after every command and don't need to give single or double quotation for string
+* Don't give space while creating table inside the bracket
+* Don't give space before and after to '=' in delete command
+
+create database jana
+Database jana is created.
+
+create table student(name string)
+Database is not selected
+
+use jana
+selected database is jana
+
+create table student(name string,rollno int,branch string)
+Table 'student' is created in database jana
+
+desc student
+[name, rollno, branch]
+[string, int, string]
++------------------------------+------------------------------+
+|  Field                       |  Type                        |
++------------------------------+------------------------------+
+|  name                        |  string                      |
+|  rollno                      |  int                         |
+|  branch                      |  string                      |
++------------------------------+------------------------------+
+
+insert into student values(jana,303,cse)
+values inserted into the table student
+
+insert into student values(aravinth,L02,cse)
+values inserted into the table student
+
+indert into student values(sugash,L04,cse)
+Invalid command. Try again.
+
+insert into student values(sugash,cse)
+some value is missing in the command . . .
+
+insert into student values(sugash,L04,cse)
+values inserted into the table student
+
+insert into student values(anandh,102,eee)
+values inserted into the table student
+
+insert into student values(asruf,302,mech)
+values inserted into the table student
+
+select * from student
++------------------------------+------------------------------+------------------------------+
+|  name                        |  rollno                      |  branch                      |
++------------------------------+------------------------------+------------------------------+
+|  jana                        |  303                         |  cse                         |
+|  aravinth                    |  L02                         |  cse                         |
+|  sugash                      |  L04                         |  cse                         |
+|  anandh                      |  102                         |  eee                         |
+|  asruf                       |  302                         |  mech                        |
++------------------------------+------------------------------+------------------------------+
+
+create database work
+Database work is created.
+
+create table employee(employe_name string,salary int)
+Database is not selected
+
+use work
+selected database is work
+
+create table employee(employe_name string,salary int)
+Table 'employee' is created in database work
+
+desc employee
+[employe_name, salary]
+[string, int]
++------------------------------+------------------------------+
+|  Field                       |  Type                        |
++------------------------------+------------------------------+
+|  employe_name                |  string                      |
+|  salary                      |  int                         |
++------------------------------+------------------------------+
+
+select * from employee
+Empty set
+
+use jana
+selected database is jana
+
+select * from student
++------------------------------+------------------------------+------------------------------+
+|  name                        |  rollno                      |  branch                      |
++------------------------------+------------------------------+------------------------------+
+|  jana                        |  303                         |  cse                         |
+|  aravinth                    |  L02                         |  cse                         |
+|  sugash                      |  L04                         |  cse                         |
+|  anandh                      |  102                         |  eee                         |
+|  asruf                       |  302                         |  mech                        |
++------------------------------+------------------------------+------------------------------+
+
+delete from student where branch=mech
+1 rows is affected
+
+
+select * from student
++------------------------------+------------------------------+------------------------------+
+|  name                        |  rollno                      |  branch                      |
++------------------------------+------------------------------+------------------------------+
+|  jana                        |  303                         |  cse                         |
+|  aravinth                    |  L02                         |  cse                         |
+|  sugash                      |  L04                         |  cse                         |
+|  anandh                      |  102                         |  eee                         |
++------------------------------+------------------------------+------------------------------+
