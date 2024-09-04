@@ -1,7 +1,5 @@
 package com.jana.HostelApp.controller;
 
-import com.jana.HostelApp.HostelApp;
-import com.jana.HostelApp.model.Hostel;
 import com.jana.HostelApp.model.Student;
 import com.jana.HostelApp.service.HostelService;
 import com.jana.HostelApp.service.RoomService;
@@ -10,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
-import java.awt.*;
-import java.sql.SQLException;
 import java.util.List;
-import java.util.Locale;
 
 @Component
 public class StudentController {

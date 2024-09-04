@@ -1,11 +1,8 @@
 package com.jana.HostelApp.service;
 
-import com.jana.HostelApp.model.Room;
 import com.jana.HostelApp.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class RoomService {

@@ -2,7 +2,6 @@ package com.jana.HostelApp;
 
 import com.jana.HostelApp.controller.HostelController;
 import com.jana.HostelApp.controller.StudentController;
-import com.jana.HostelApp.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,9 +9,6 @@ import org.springframework.context.ApplicationContext;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.sql.SQLException;
 
 @SpringBootApplication
 public class HostelApp extends JFrame {

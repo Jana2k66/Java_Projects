@@ -1,9 +1,7 @@
 package com.jana.HostelApp.service;
 
 import com.jana.HostelApp.model.Hostel;
-import com.jana.HostelApp.model.Student;
 import com.jana.HostelApp.repository.HostelRepository;
-import com.jana.HostelApp.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
